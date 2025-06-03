@@ -1,5 +1,4 @@
 # Interactive Page Jump
-dynamic key functionalities to be implemented.- json files should be uplaoded to the main dadtabase
 This web application allows users to navigate educational resources such as PDFs, Word documents, PowerPoint presentations, and videos. Users can jump to recommended pages in documents or watch videos, all within a modal interface.
 
 ## Features
