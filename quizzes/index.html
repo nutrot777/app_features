@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Choose a Resource for Your Learning Objective</h1>
+    <div class="resource-list">
+        <!-- Example resource cards, these will be dynamically generated in the future -->
+        <div class="resource-card" data-resource="management_information">
+            <div class="resource-icon">📹</div>
+            <div class="resource-title">Management Information (Video)</div>
+            <div class="resource-filename">management_information.mp4</div>
+        </div>
+        <div class="resource-card" data-resource="introduction_to_management_information">
+            <div class="resource-icon">📄</div>
+            <div class="resource-title">Introduction to Management Information (PDF)</div>
+            <div class="resource-filename">introduction_to_management_information.pdf</div>
+        </div>
+        <div class="resource-card" data-resource="world_of_information_systems">
+            <div class="resource-icon">📄</div>
+            <div class="resource-title">The World of Information Systems (PDF)</div>
+            <div class="resource-filename">the_world_of_information_systems.pdf</div>
+        </div>
+        <div class="resource-card" data-resource="ted_talk_on_MI">
+            <div class="resource-icon">📹</div>
+            <div class="resource-title">TED Talk on Management Information (Video)</div>
+            <div class="resource-filename">ted_talk_on_MI.mp4</div>
+        </div>
+    </div>
+    <div id="level-selection" style="display:none;">
+        <div class="level-selection-card">
+            <h2>Select Difficulty Level</h2>
+            <button class="level-btn" data-level="easy">Easy</button>
+            <button class="level-btn" data-level="medium">Medium</button>
+            <button class="level-btn" data-level="hard">Hard</button>
+            <button class="back-btn">Back</button>
+        </div>
+    </div>
+    <div id="quiz-interface" style="display:none;">
+        <div id="quiz-progress"></div>
+        <div id="quiz-card"></div>
+        <div class="quiz-nav">
+            <button id="prev-question" disabled>Previous</button>
+            <button id="next-question">Next</button>
+        </div>
+        <div id="timer">Time Remaining: <span id="time-left"></span></div>
+    </div>
+    <div id="quiz-result" style="display:none;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of an introduction to management information?",
+      "options": ["To provide an overview", "To teach programming", "To sell products"],
+      "correct_answer": "To provide an overview"
+    },
+    {
+      "question": "Which of these is a key topic in an introduction to management information?",
+      "options": ["Types of information systems", "Cooking recipes", "Car maintenance"],
+      "correct_answer": "Types of information systems"
+    },
+    {
+      "question": "Which of the following is a common output of management information?",
+      "options": ["Reports", "Games", "Music"],
+      "correct_answer": "Reports"
+    },
+    {
+      "question": "What is a typical input for management information systems?",
+      "options": ["Data", "Water", "Electricity"],
+      "correct_answer": "Data"
+    }
+  ]
+}

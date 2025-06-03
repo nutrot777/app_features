@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following is NOT a type of management information system?",
+      "options": ["Transaction processing system", "Decision support system", "Coffee machine"],
+      "correct_answer": "Coffee machine"
+    },
+    {
+      "question": "What is the main function of a decision support system?",
+      "options": ["Support complex decision making", "Print documents", "Play music"],
+      "correct_answer": "Support complex decision making"
+    },
+    {
+      "question": "Which of these is a benefit of management information?",
+      "options": ["Improved decision making", "Longer meetings", "More paperwork"],
+      "correct_answer": "Improved decision making"
+    },
+    {
+      "question": "Which of the following is a key feature of management information systems?",
+      "options": ["Data processing", "Cooking", "Painting"],
+      "correct_answer": "Data processing"
+    }
+  ]
+}

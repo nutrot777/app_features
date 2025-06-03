@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following is NOT a component of an information system?",
+      "options": ["Software", "Hardware", "Sandwich"],
+      "correct_answer": "Sandwich"
+    },
+    {
+      "question": "What is the main function of a transaction processing system?",
+      "options": ["Process business transactions", "Cook food", "Paint walls"],
+      "correct_answer": "Process business transactions"
+    },
+    {
+      "question": "Which of these is a benefit of information systems?",
+      "options": ["Faster communication", "Longer meetings", "More paperwork"],
+      "correct_answer": "Faster communication"
+    },
+    {
+      "question": "Which of the following is a key feature of information systems?",
+      "options": ["Data processing", "Cooking", "Painting"],
+      "correct_answer": "Data processing"
+    }
+  ]
+}

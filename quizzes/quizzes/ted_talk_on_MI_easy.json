@@ -1,0 +1,29 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main topic of the TED Talk on Management Information?",
+      "options": ["Management Information", "Cooking", "Traveling"],
+      "correct_answer": "Management Information"
+    },
+    {
+      "question": "Which of these is a benefit discussed in the TED Talk?",
+      "options": ["Better decision making", "Longer meetings", "More paperwork"],
+      "correct_answer": "Better decision making"
+    },
+    {
+      "question": "What is a key takeaway from the TED Talk?",
+      "options": ["Importance of information", "How to cook", "How to travel"],
+      "correct_answer": "Importance of information"
+    },
+    {
+      "question": "Which device is mentioned as useful for management information?",
+      "options": ["Computer", "Toaster", "Bicycle"],
+      "correct_answer": "Computer"
+    },
+    {
+      "question": "Which of the following is NOT a benefit of management information systems?",
+      "options": ["Improved decision making", "Faster communication", "Increased paperwork"],
+      "correct_answer": "Increased paperwork"
+    }
+  ]
+}

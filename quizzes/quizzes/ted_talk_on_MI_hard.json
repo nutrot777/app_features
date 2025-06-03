@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following best describes the impact of management information systems as discussed in the TED Talk?",
+      "options": ["Improved business outcomes", "More paperwork", "Slower processes"],
+      "correct_answer": "Improved business outcomes"
+    },
+    {
+      "question": "What is a major challenge in implementing management information systems according to the TED Talk?",
+      "options": ["User resistance", "Too much free time", "Unlimited budget"],
+      "correct_answer": "User resistance"
+    },
+    {
+      "question": "Which regulation is most relevant to information privacy as discussed in the TED Talk?",
+      "options": ["GDPR", "DMCA", "FDA"],
+      "correct_answer": "GDPR"
+    },
+    {
+      "question": "What is the main advantage of integrating management information systems with other business systems according to the TED Talk?",
+      "options": ["Better data flow", "More paperwork", "Slower processes"],
+      "correct_answer": "Better data flow"
+    }
+  ]
+}

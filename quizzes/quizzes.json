@@ -1,0 +1,56 @@
+{
+  "learning_materials": [
+    {
+      "title": "Introduction to Marketing",
+      "quiz": {
+        "easy": [
+          {
+            "question": "What is marketing?",
+            "options": ["Selling products", "Advertising", "Understanding customer needs"],
+            "correct_answer": "Understanding customer needs"
+          }
+        ],
+        "medium": [
+          {
+            "question": "Which of the following is a component of the marketing mix?",
+            "options": ["Price", "Quality", "Functionality"],
+            "correct_answer": "Price"
+          }
+        ],
+        "hard": [
+          {
+            "question": "What is the relationship between customer loyalty and brand equity?",
+            "options": ["Direct", "Inverse", "No relationship"],
+            "correct_answer": "Direct"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Web Development Basics",
+      "quiz": {
+        "easy": [
+          {
+            "question": "What does HTML stand for?",
+            "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+            "correct_answer": "Hyper Text Markup Language"
+          }
+        ],
+        "medium": [
+          {
+            "question": "Which of the following is used to style HTML pages?",
+            "options": ["CSS", "JavaScript", "Python"],
+            "correct_answer": "CSS"
+          }
+        ],
+        "hard": [
+          {
+            "question": "Which of the following is a CSS layout model?",
+            "options": ["Flexbox", "CSS Grid", "All of the above"],
+            "correct_answer": "All of the above"
+          }
+        ]
+      }
+    }
+  ]
+}

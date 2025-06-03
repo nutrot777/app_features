@@ -1,0 +1,29 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following is NOT a benefit of management information discussed in the TED Talk?",
+      "options": ["Faster decision making", "Higher taxes", "Improved communication"],
+      "correct_answer": "Higher taxes"
+    },
+    {
+      "question": "What is the main function of management information according to the TED Talk?",
+      "options": ["Support decision making", "Print documents", "Play music"],
+      "correct_answer": "Support decision making"
+    },
+    {
+      "question": "Which of these is a challenge mentioned in the TED Talk?",
+      "options": ["User resistance", "Too much free time", "Unlimited budget"],
+      "correct_answer": "User resistance"
+    },
+    {
+      "question": "Which of the following is a key feature of management information systems discussed in the TED Talk?",
+      "options": ["Data processing", "Cooking", "Painting"],
+      "correct_answer": "Data processing"
+    },
+    {
+      "question": "Which regulation is most relevant to information privacy as discussed in the TED Talk?",
+      "options": ["GDPR", "DMCA", "FDA"],
+      "correct_answer": "GDPR"
+    }
+  ]
+}

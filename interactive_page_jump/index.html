@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Navigation in Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Video Section -->
+    <div id="video-container">
+        <video id="video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div id="recommendations">
+        <h3>Recommendations</h3>
+        <ul>
+            <li><a href="#" data-file="chapter_11_Modern ERP_select, implement, and use today's advanced business systems.pdf" data-page="13-20">Read pages 13-20 on Marketing Chains</a></li>
+            <li><a href="#" data-file="chapter_11_Modern ERP_select, implement, and use today's advanced business systems.pdf" data-page="30-40">Read pages 30-40 on Customer Relationships</a></li>
+            <li><a href="#" data-file="dag Batch 6.docx" data-page="1-11">Testing for Doc file</a></li>
+            <li><a href="#" data-file="https://docs.google.com/presentation/d/17xk9Sqi8oudRYUvMb163qSLctzceLbk2/edit?usp=sharing&ouid=112511055745561303357&rtpof=true&sd=true" data-page="1-11">Testing for PowerPoint file</a></li>
+        </ul>
+    </div>
+
+    <!-- Modal to display the PDF -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="pdf-container">
+                <!-- PDFs will be rendered here dynamically -->
+            </div>
+            <button id="view-all-btn">View All Pages</button> <!-- New Button -->
+            <button id="go-back-btn">Go Back to Recommendation</button> <!-- Added Go Back button -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script> <!-- Add mammoth for DOCX support -->
+    <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.11.0/dist/pptxgen.bundle.js"></script> <!-- Add pptxgenjs for PPTX support -->
+    <script src="script.js"></script>
+</body>
+</html>

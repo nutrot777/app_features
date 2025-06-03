@@ -1,0 +1,38 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following best describes the relationship between management information systems and decision support systems?",
+      "options": ["MIS provides routine information, DSS supports complex decisions", "MIS is a type of DSS", "DSS is only for top management"],
+      "correct_answer": "MIS provides routine information, DSS supports complex decisions"
+    },
+    {
+      "question": "What is data mining in the context of management information systems?",
+      "options": ["Extracting useful patterns from large data sets", "Deleting old files", "Backing up data"],
+      "correct_answer": "Extracting useful patterns from large data sets"
+    },
+    {
+      "question": "Which of the following is a challenge in implementing management information systems?",
+      "options": ["User resistance", "More free time", "Lower costs"],
+      "correct_answer": "User resistance"
+    },
+    {
+      "question": "Which law or regulation is most relevant to the privacy of information in management information systems?",
+      "options": ["GDPR", "DMCA", "FCC"],
+      "correct_answer": "GDPR"
+    },
+    {
+      "question": "Select all that apply: Which of the following are features of a good management information system?",
+      "options": ["Accurate data", "Timely reports", "Complexity", "User-friendly interface"],
+      "correct_answer": ["Accurate data", "Timely reports", "User-friendly interface"],
+      "explanation": "A good MIS provides accurate data, timely reports, and a user-friendly interface. Complexity is not a feature."
+    },
+    {
+      "question": "Briefly explain why data privacy is important in management information systems.",
+      "type": "text",
+      "model_answer": "Data privacy is important to protect individuals' personal data and maintain trust in information systems.",
+      "keywords": ["privacy", "protect", "personal data", "trust", "information systems"],
+      "min_keywords": 2,
+      "explanation": "A good answer should mention protecting personal data, privacy, or trust in information systems."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following best describes the difference between MIS and DSS?",
+      "options": ["MIS provides routine info, DSS supports non-routine decisions", "MIS is for entertainment", "DSS is for data entry only"],
+      "correct_answer": "MIS provides routine info, DSS supports non-routine decisions"
+    },
+    {
+      "question": "What is a major challenge in implementing management information systems?",
+      "options": ["User resistance", "Too much free time", "Unlimited budget"],
+      "correct_answer": "User resistance"
+    },
+    {
+      "question": "Which regulation is most relevant to information privacy?",
+      "options": ["GDPR", "DMCA", "FDA"],
+      "correct_answer": "GDPR"
+    },
+    {
+      "question": "What is the main advantage of integrating MIS with other business systems?",
+      "options": ["Better data flow", "More paperwork", "Slower processes"],
+      "correct_answer": "Better data flow"
+    }
+  ]
+}

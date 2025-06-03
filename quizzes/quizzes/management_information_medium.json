@@ -1,0 +1,38 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following is NOT a component of a management information system?",
+      "options": ["Hardware", "Software", "Furniture"],
+      "correct_answer": "Furniture"
+    },
+    {
+      "question": "What is the primary function of a database in a management information system?",
+      "options": ["Store data", "Print reports", "Send emails"],
+      "correct_answer": "Store data"
+    },
+    {
+      "question": "Which role is responsible for maintaining the security of information systems?",
+      "options": ["System administrator", "Receptionist", "Sales manager"],
+      "correct_answer": "System administrator"
+    },
+    {
+      "question": "Which of these is an example of a transaction processing system?",
+      "options": ["Payroll system", "Word processor", "Spreadsheet"],
+      "correct_answer": "Payroll system"
+    },
+    {
+      "question": "Select all that apply: Which of the following are benefits of a management information system?",
+      "options": ["Faster decision making", "Improved communication", "More paperwork", "Better data accuracy"],
+      "correct_answer": ["Faster decision making", "Improved communication", "Better data accuracy"],
+      "explanation": "The main benefits are faster decision making, improved communication, and better data accuracy. More paperwork is not a benefit."
+    },
+    {
+      "question": "In your own words, describe a challenge in implementing a management information system.",
+      "type": "text",
+      "model_answer": "User resistance is a common challenge because people may be hesitant to adopt new systems. Training and communication can help overcome this.",
+      "keywords": ["user resistance", "hesitant", "adopt", "training", "communication"],
+      "min_keywords": 1,
+      "explanation": "Look for keywords like 'user resistance', 'hesitant', 'adopt', 'training', or 'communication' in your answer."
+    }
+  ]
+}

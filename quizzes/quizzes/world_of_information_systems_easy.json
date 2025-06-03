@@ -1,0 +1,24 @@
+{
+  "quiz": [
+    {
+      "question": "What is an information system?",
+      "options": ["A system for managing information", "A type of car", "A musical instrument"],
+      "correct_answer": "A system for managing information"
+    },
+    {
+      "question": "Which of these is a component of an information system?",
+      "options": ["Hardware", "Bread", "Paint"],
+      "correct_answer": "Hardware"
+    },
+    {
+      "question": "Which of the following is a type of information system?",
+      "options": ["Transaction processing system", "Coffee machine", "Bicycle"],
+      "correct_answer": "Transaction processing system"
+    },
+    {
+      "question": "What is the main goal of an information system?",
+      "options": ["Support business operations", "Make coffee", "Play music"],
+      "correct_answer": "Support business operations"
+    }
+  ]
+}

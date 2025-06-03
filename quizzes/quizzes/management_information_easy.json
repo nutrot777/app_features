@@ -1,0 +1,80 @@
+{
+  "quiz": [
+    {
+      "question": "What is management information?",
+      "options": ["Data for managers", "A type of software", "A process for storing files"],
+      "correct_answer": "Data for managers"
+    },
+    {
+      "question": "Which of these is a benefit of management information systems?",
+      "options": ["Faster decision making", "Higher taxes", "More paperwork"],
+      "correct_answer": "Faster decision making"
+    },
+    {
+      "question": "Which device is commonly used to input data into a management information system?",
+      "options": ["Keyboard", "Printer", "Monitor"],
+      "correct_answer": "Keyboard"
+    },
+    {
+      "question": "What is the main output of a management information system?",
+      "options": ["Reports", "Raw data", "Games"],
+      "correct_answer": "Reports"
+    },
+    {
+      "question": "Select all that apply: Which of the following are components of a management information system?",
+      "options": ["Hardware", "Software", "Furniture", "People"],
+      "correct_answer": ["Hardware", "Software", "People"],
+      "explanation": "The main components of a management information system are hardware, software, and people. Furniture is not considered a component."
+    },
+    {
+      "question": "Briefly explain what a management information system does.",
+      "type": "text",
+      "model_answer": "A management information system collects, processes, stores, and disseminates information to support decision making in organizations.",
+      "keywords": ["collects", "processes", "stores", "disseminates", "information", "decision making"],
+      "min_keywords": 2,
+      "explanation": "A good answer should mention collecting, processing, storing, or disseminating information, and supporting decision making."
+    },
+    {
+      "question": "What are the key purposes of a management information system?",
+      "options": ["To entertain users", "To process and store data", "To create graphics"],
+      "correct_answer": "To process and store data"
+    },
+    {
+      "question": "True or False: A management information system can function without software.",
+      "type": "boolean",
+      "correct_answer": "False",
+      "explanation": "Software is a crucial component of a management information system, enabling it to process and manage data."
+    },
+    {
+      "question": "Fill in the blank: A management information system helps in __________ decision making.",
+      "type": "text",
+      "model_answer": "informed",
+      "keywords": ["informed"],
+      "min_keywords": 1,
+      "explanation": "The blank should be filled with a word indicating that the decision making is based on processed information, like 'informed'."
+    },
+    {
+      "question": "Select all that apply: Which of the following are types of management information systems?",
+      "options": ["Transaction Processing Systems", "Customer Relationship Management Systems", "Word Processing Systems"],
+      "correct_answer": ["Transaction Processing Systems", "Customer Relationship Management Systems"],
+      "explanation": "Transaction Processing Systems and Customer Relationship Management Systems are types of management information systems. Word Processing Systems are not."
+    },
+    {
+      "question": "Drag and drop the following components into the correct categories: Hardware, Software, People, Furniture.",
+      "type": "matching",
+      "options": {
+        "Hardware": ["Keyboard", "Monitor"],
+        "Software": ["Operating System", "Database Management System"],
+        "People": ["IT Manager", "Data Analyst"],
+        "Furniture": ["Desk", "Chair"]
+      },
+      "correct_answer": {
+        "Hardware": ["Keyboard", "Monitor"],
+        "Software": ["Operating System", "Database Management System"],
+        "People": ["IT Manager", "Data Analyst"],
+        "Furniture": ["Desk", "Chair"]
+      },
+      "explanation": "This question tests the ability to categorize the components of a management information system. All provided options are correctly categorized."
+    }
+  ]
+}

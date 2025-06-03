@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Chapters on Scrubber</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            width: 800px;
+            margin-bottom: 20px;
+        }
+
+        #scrubber-container {
+            width: 800px;
+            height: 20px;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        #scrubber {
+            height: 10px;
+            background-color: #007bff;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            transition: width 0.1s ease-out;
+        }
+
+        .section {
+            position: absolute;
+            height: 100%;
+            background-color: rgba(0, 123, 255, 0.3);
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .section:hover {
+            background-color: rgba(0, 123, 255, 0.5);
+        }
+
+        #chapter-labels {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .chapter-label {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .active-section {
+            background-color: #ff6347;  /* Highlight active section */
+        }
+    </style>
+</head>
+<body>
+
+<div id="video-container">
+    <video id="video" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Scrubber -->
+    <div id="scrubber-container">
+        <div id="scrubber"></div>
+    </div>
+
+    <!-- Chapter labels -->
+    <div id="chapter-labels"></div>
+</div>
+
+<script>
+    const video = document.getElementById('video');
+    const scrubber = document.getElementById('scrubber');
+    const scrubberContainer = document.getElementById('scrubber-container');
+    const chapterLabels = document.getElementById('chapter-labels');
+
+    // Example VTT content (you can replace this with loading from a file)
+    const vttContent = `
+    1
+    00:00:00.000 --> 00:00:02.000
+    Introduction to the course
+
+    2
+    00:00:02.000 --> 00:00:20.000
+    Main content discussion
+
+    3
+    00:00:20.000 --> 00:00:01.000
+    Conclusion and Q&A
+    `;
+
+    // Parse VTT content to create sections with timestamps
+    const chapters = [];
+    const lines = vttContent.split('\n').filter(line => line.trim() !== '');
+
+    for (let i = 0; i < lines.length; i++) {
+        const timeRange = lines[i + 1]?.match(/(\d{2}):(\d{2}):(\d{2})\.(\d{3}) --> (\d{2}):(\d{2}):(\d{2})\.(\d{3})/);
+        if (timeRange) {
+            const startTime = convertToSeconds(timeRange[0]);
+            const endTime = convertToSeconds(timeRange[1]);
+            const text = lines[i + 2];
+            chapters.push({ startTime, endTime, text });
+            i += 2;
+        }
+    }
+
+    // Convert timestamp to seconds
+    function convertToSeconds(timestamp) {
+        const timeParts = timestamp.split(':');
+        const seconds = timeParts[0] * 3600 + timeParts[1] * 60 + parseFloat(timeParts[2]);
+        return seconds;
+    }
+
+    // Create clickable sections on the scrubber
+    chapters.forEach(chapter => {
+        const section = document.createElement('div');
+        const sectionWidth = (chapter.endTime - chapter.startTime) / video.duration * 100;  // Percentage width of section
+        section.style.left = (chapter.startTime / video.duration) * 100 + '%';
+        section.style.width = sectionWidth + '%';
+        section.classList.add('section');
+        section.addEventListener('click', () => {
+            video.currentTime = chapter.startTime;
+            video.play();
+        });
+        scrubberContainer.appendChild(section);
+
+        // Create chapter labels
+        const label = document.createElement('span');
+        label.textContent = chapter.text;
+        label.classList.add('chapter-label');
+        label.addEventListener('click', () => {
+            video.currentTime = chapter.startTime;
+        });
+        chapterLabels.appendChild(label);
+    });
+
+    // Update the scrubber's progress as the video plays
+    video.ontimeupdate = () => {
+        const progress = (video.currentTime / video.duration) * 100;
+        scrubber.style.width = progress + '%';
+
+        // Highlight the current section on the scrubber
+        chapters.forEach(chapter => {
+            if (video.currentTime >= chapter.startTime && video.currentTime <= chapter.endTime) {
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active-section');
+                });
+                const activeSection = document.querySelector(`.section[style="left: ${chapter.startTime / video.duration * 100}%"]`);
+                if (activeSection) {
+                    activeSection.classList.add('active-section');
+                }
+            }
+        });
+    };
+
+    // Update the current section every time the video time changes
+    video.ontimeupdate();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "answer": "Paris",
+        "explanation": "Paris is the capital and most populous city of France. It is known for its art, gastronomy, and culture.",
+        "resources": [
+            {"label": "Wikipedia: Paris", "url": "https://en.wikipedia.org/wiki/Paris"}
+        ]
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter",
+        "explanation": "Jupiter is the largest planet in our solar system and is known for its prominent Great Red Spot.",
+        "resources": [
+            {"label": "NASA: Jupiter", "url": "https://solarsystem.nasa.gov/planets/jupiter/overview/"}
+        ]
+    },
+    {
+        "question": "Who developed the theory of relativity?",
+        "answer": "Albert Einstein",
+        "explanation": "Albert Einstein developed the theory of relativity, which revolutionized theoretical physics.",
+        "resources": [
+            {"label": "Biography: Albert Einstein", "url": "https://www.biography.com/scientist/albert-einstein"}
+        ]
+    }
+]
