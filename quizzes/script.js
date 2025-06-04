@@ -49,6 +49,15 @@ let timer = null;
 let timeLeft = 0;
 let timerProgressBar = null;
 
+// -- Randomize questions ----
+function shuffle(array){
+    for (let i = array.length -1; i> 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // --- Gamification & Analytics ---
 let analytics = JSON.parse(localStorage.getItem('quizAnalytics') || '{}');
 let points = 0;
@@ -295,7 +304,7 @@ function startQuiz() {
                 console.error('Quiz data invalid or empty:', data);
                 return restartQuiz();
             }
-            quizData = data.quiz;
+            quizData = shuffle([...data.quiz]);
             currentQuestion = 0;
             userAnswers = [];
             timeLeft = TIMER_SETTINGS[selectedLevel].total;
