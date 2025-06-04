@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcards</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-v1.css">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,15 +13,13 @@
     <h1>Flashcards for Learning</h1>
 
     <!-- Container for flashcards -->
-    <div id="flashcard-container"></div>
+    <div id="flashcard-container" class="flex flex-wrap justify-center gap-6"></div>
 
     <!-- Modal to display detailed flashcard content -->
-    <div id="pdf-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <div id="pdf-container">
-                <!-- PDFs or detailed content will be rendered here -->
-            </div>
+    <div id="pdf-modal" class="modal fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden">
+        <div class="modal-content bg-white p-5 m-auto rounded-md w-4/5 max-h-80vh">
+            <span id="close-modal" class="close text-lg text-gray-500 cursor-pointer">&times;</span>
+            <div id="pdf-container" class="max-h-80vh overflow-auto"></div>
         </div>
     </div>
 

@@ -60,7 +60,7 @@ function renderSingleFlashcard(index, direction = 0) {
         cardFront.textContent = (flashcard && flashcard.question) ? flashcard.question : 'No question';
         // Card back (answer + explanation button)
         const cardBack = document.createElement('div');
-        cardBack.className = 'card-back absolute w-full h-full flex flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-100 to-teal-50 text-slate-700 p-10 transform rotate-y-180';
+        cardBack.className = 'card-back absolute w-full h-full flex flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-100 to-teal-50 text-slate-700 p-10';
         // Answer (always visible on flip)
         const answer = document.createElement('div');
         answer.className = 'answer text-xl font-bold mb-4 text-center';
